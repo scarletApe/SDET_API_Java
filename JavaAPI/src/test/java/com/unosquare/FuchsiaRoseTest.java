@@ -22,7 +22,7 @@ public class FuchsiaRoseTest {
 
 		// Assert that correct status code is returned.
 		Assert.assertEquals(statusCode, 200);
-		Reporter.log("Sucess 200 validation");
+		Reporter.log("Success Status 200 validation");
 		
 		response.then().body("data.name", Matchers.equalTo("fuchsia rose"));
 		response.then().body("data.year", Matchers.equalTo(2001));

@@ -23,11 +23,11 @@ public class FirstAPITest {
 
 		// Assert that correct status code is returned.
 		Assert.assertEquals(statusCode, 200);
-		Reporter.log("Sucess 200 validation");
+		Reporter.log("Success Status 200 validation");
 	}
 
 	@Test
-	public void validate_first_last_names() {
+	public void validate_first_and_last_names() {
 		RestAssured.baseURI = "https://reqres.in/api/";
 		RequestSpecification httpRequest = RestAssured.given();
 		Response response = httpRequest.get("/users/2");
@@ -41,7 +41,7 @@ public class FirstAPITest {
 	}
 
 	@Test
-	public void validate_200_status_Gherkin() {
+	public void validate_first_and_last_names_Gherkin() {
 
 		RestAssured.given()
 		.when()
@@ -54,7 +54,7 @@ public class FirstAPITest {
 		.assertThat().body("data.'email'", Matchers.equalTo("janet.weaver@reqres.in"))
 		.assertThat().body("data.'avatar'", Matchers.equalTo("https://reqres.in/img/faces/2-image.jpg"));
 
-		Reporter.log("Sucess 200 validation");
+		Reporter.log("Success Status 200 validation");
 	}
 
 
