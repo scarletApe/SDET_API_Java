@@ -2,54 +2,72 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Sucess 200 validation]]>
+      <![CDATA[{"name":"JohnAPI","job":"QA"}]]>
     </line>
     <line>
-      <![CDATA[Sucess 200 validation]]>
+      <![CDATA[{"name":"JohnAPI","job":"QA","id":"584","createdAt":"2022-10-27T17:12:33.152Z"}]]>
     </line>
     <line>
-      <![CDATA[{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
+      <![CDATA[201]]>
+    </line>
+    <line>
+      <![CDATA[{"name":"Steve Jobs","job":"CEO","id":"109","createdAt":"2022-10-27T17:12:33.665Z"}]]>
+    </line>
+    <line>
+      <![CDATA[{"name":"Steve Jobs","job":"CEO"}]]>
+    </line>
+    <line>
+      <![CDATA[201]]>
+    </line>
+    <line>
+      <![CDATA[{"name":"Bill Gates","job":"Chairman","id":"738","createdAt":"2022-10-27T17:12:34.130Z"}]]>
+    </line>
+    <line>
+      <![CDATA[{"name":"Bill Gates","job":"Chairman"}]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-10-25T15:49:07 CDT" name="Default suite" finished-at="2022-10-25T15:49:10 CDT" duration-ms="2290">
+  <suite started-at="2022-10-27T12:12:06 CDT" name="Default suite" finished-at="2022-10-27T12:12:09 CDT" duration-ms="2922">
     <groups>
     </groups>
-    <test started-at="2022-10-25T15:49:07 CDT" name="Default test" finished-at="2022-10-25T15:49:10 CDT" duration-ms="2290">
-      <class name="com.unosquare.FirstAPITest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.unosquare.FirstAPITest@130161f7]" started-at="2022-10-25T15:49:07 CDT" name="beforeMethod" finished-at="2022-10-25T15:49:07 CDT" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validate_200_status()[pri:0, instance:com.unosquare.FirstAPITest@130161f7]" started-at="2022-10-25T15:49:07 CDT" name="validate_200_status" finished-at="2022-10-25T15:49:09 CDT" duration-ms="1261" status="PASS">
+    <test started-at="2022-10-27T12:12:06 CDT" name="Default test" finished-at="2022-10-27T12:12:09 CDT" duration-ms="2922">
+      <class name="com.unosquare.requests.PostTest">
+        <test-method signature="post_test()[pri:0, instance:com.unosquare.requests.PostTest@3d51f06e]" started-at="2022-10-27T12:12:06 CDT" name="post_test" finished-at="2022-10-27T12:12:08 CDT" duration-ms="1975" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Sucess 200 validation]]>
+              <![CDATA[{"name":"JohnAPI","job":"QA"}]]>
+            </line>
+            <line>
+              <![CDATA[{"name":"JohnAPI","job":"QA","id":"584","createdAt":"2022-10-27T17:12:33.152Z"}]]>
             </line>
           </reporter-output>
-        </test-method> <!-- validate_200_status -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.unosquare.FirstAPITest@130161f7]" started-at="2022-10-25T15:49:09 CDT" name="beforeMethod" finished-at="2022-10-25T15:49:09 CDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validate_200_status_Gherkin()[pri:0, instance:com.unosquare.FirstAPITest@130161f7]" started-at="2022-10-25T15:49:09 CDT" name="validate_200_status_Gherkin" finished-at="2022-10-25T15:49:09 CDT" duration-ms="677" status="PASS">
+        </test-method> <!-- post_test -->
+        <test-method signature="post_test_from_file()[pri:0, instance:com.unosquare.requests.PostTest@3d51f06e]" started-at="2022-10-27T12:12:08 CDT" name="post_test_from_file" finished-at="2022-10-27T12:12:09 CDT" duration-ms="464" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Sucess 200 validation]]>
+              <![CDATA[201]]>
+            </line>
+            <line>
+              <![CDATA[{"name":"Steve Jobs","job":"CEO","id":"109","createdAt":"2022-10-27T17:12:33.665Z"}]]>
+            </line>
+            <line>
+              <![CDATA[{"name":"Steve Jobs","job":"CEO"}]]>
             </line>
           </reporter-output>
-        </test-method> <!-- validate_200_status_Gherkin -->
-        <test-method signature="validate_first_last_names()[pri:0, instance:com.unosquare.FirstAPITest@130161f7]" started-at="2022-10-25T15:49:09 CDT" name="validate_first_last_names" finished-at="2022-10-25T15:49:10 CDT" duration-ms="317" status="PASS">
+        </test-method> <!-- post_test_from_file -->
+        <test-method signature="post_test_from_file2()[pri:0, instance:com.unosquare.requests.PostTest@3d51f06e]" started-at="2022-10-27T12:12:09 CDT" name="post_test_from_file2" finished-at="2022-10-27T12:12:09 CDT" duration-ms="444" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
+              <![CDATA[201]]>
+            </line>
+            <line>
+              <![CDATA[{"name":"Bill Gates","job":"Chairman","id":"738","createdAt":"2022-10-27T17:12:34.130Z"}]]>
+            </line>
+            <line>
+              <![CDATA[{"name":"Bill Gates","job":"Chairman"}]]>
             </line>
           </reporter-output>
-        </test-method> <!-- validate_first_last_names -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.unosquare.FirstAPITest@130161f7]" started-at="2022-10-25T15:49:09 CDT" name="beforeMethod" finished-at="2022-10-25T15:49:09 CDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-      </class> <!-- com.unosquare.FirstAPITest -->
+        </test-method> <!-- post_test_from_file2 -->
+      </class> <!-- com.unosquare.requests.PostTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

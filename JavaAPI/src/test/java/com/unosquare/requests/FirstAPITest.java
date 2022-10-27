@@ -1,4 +1,4 @@
-package com.unosquare;
+package com.unosquare.requests;
 
 import org.hamcrest.Matchers;
 import org.testng.Assert;

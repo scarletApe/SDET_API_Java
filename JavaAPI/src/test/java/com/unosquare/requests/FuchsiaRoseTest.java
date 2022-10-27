@@ -1,4 +1,4 @@
-package com.unosquare;
+package com.unosquare.requests;
 
 import org.hamcrest.Matchers;
 import org.testng.Assert;
@@ -29,7 +29,6 @@ public class FuchsiaRoseTest {
 		response.then().body("data.color", Matchers.equalTo("#C74375"));
 		response.then().body("data.pantone_value", Matchers.equalTo("17-2031"));
 		Reporter.log(response.body().asString());
-		System.out.println(response.body().asString());
 	}
 
 	@Test
