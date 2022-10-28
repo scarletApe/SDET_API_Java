@@ -1,48 +1,41 @@
-package com.unosquare;
+package com.unosquare.requests;
 
 import org.hamcrest.Matchers;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import com.unosquare.utils.ApiCore;
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 
 //import static io.restassured.RestAssured.given;
 
 public class FirstAPITest {
 	@Test
 	public void validate_200_status() {
-		RestAssured.baseURI = "https://reqres.in/api/";
-		RequestSpecification httpRequest = RestAssured.given();
-		Response response = httpRequest.get("/users/2");
-
-		int statusCode = response.getStatusCode();
-
+		Response response = ApiCore.get_users("/users/2");
 		// Assert that correct status code is returned.
-		Assert.assertEquals(statusCode, 200);
-		Reporter.log("Sucess 200 validation");
+		Assert.assertEquals(response.getStatusCode(), 200);
+		Reporter.log("Status Code: " + response.getStatusCode());
 	}
 
 	@Test
-	public void validate_first_last_names() {
-		RestAssured.baseURI = "https://reqres.in/api/";
-		RequestSpecification httpRequest = RestAssured.given();
-		Response response = httpRequest.get("/users/2");
+	public void validate_first_and_last_names() {
+		Response response = ApiCore.get_users("/users/2");
 
 		response.then().body("data.first_name", Matchers.equalTo("Janet"));
 		response.then().body("data.last_name", Matchers.equalTo("Weaver"));
 		response.then().body("data.email", Matchers.equalTo("janet.weaver@reqres.in"));
 		response.then().body("data.avatar", Matchers.equalTo("https://reqres.in/img/faces/2-image.jpg"));
-		Reporter.log(response.body().asString());
-		System.out.println(response.body().asString());
+		Reporter.log("Status Code: " + response.getStatusCode());
+		Reporter.log("Response: " + response.body().asString());
 	}
 
 	@Test
-	public void validate_200_status_Gherkin() {
-
+	public void validate_first_and_last_names_Gherkin() {
 		RestAssured.given()
 		.when()
 		.get("https://reqres.in/api/users/2")
@@ -53,9 +46,6 @@ public class FirstAPITest {
 		.assertThat().body("data.'last_name'", Matchers.equalTo("Weaver"))
 		.assertThat().body("data.'email'", Matchers.equalTo("janet.weaver@reqres.in"))
 		.assertThat().body("data.'avatar'", Matchers.equalTo("https://reqres.in/img/faces/2-image.jpg"));
-
-		Reporter.log("Sucess 200 validation");
 	}
-
 
 }

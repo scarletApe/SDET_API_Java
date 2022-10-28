@@ -1,55 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Sucess 200 validation]]>
+      <![CDATA[Status Code 200]]>
     </line>
     <line>
-      <![CDATA[Sucess 200 validation]]>
+      <![CDATA[Response Body: {"token":"QpwL5tke4Pnpja7X4"}]]>
     </line>
     <line>
-      <![CDATA[{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
+      <![CDATA[Status Code 201]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"name":"JohnAPI","job":"QA","id":"995","createdAt":"2022-10-28T17:42:50.833Z"}]]>
+    </line>
+    <line>
+      <![CDATA[Status Code 201]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"name":"Steve Jobs","job":"CEO","id":"286","createdAt":"2022-10-28T17:42:51.217Z"}]]>
+    </line>
+    <line>
+      <![CDATA[Status Code 201]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"name":"Bill Gates","job":"Chairman","id":"406","createdAt":"2022-10-28T17:42:51.619Z"}]]>
+    </line>
+    <line>
+      <![CDATA[Status Code: 200]]>
+    </line>
+    <line>
+      <![CDATA[Status Code: 200]]>
+    </line>
+    <line>
+      <![CDATA[Response: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
+    </line>
+    <line>
+      <![CDATA[Status Code 200]]>
+    </line>
+    <line>
+      <![CDATA[Response Body: {"name":"William Gates","job":"Chairman","updatedAt":"2022-10-28T17:42:52.937Z"}]]>
+    </line>
+    <line>
+      <![CDATA[Status Code: 200]]>
+    </line>
+    <line>
+      <![CDATA[{"data":{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
+    </line>
+    <line>
+      <![CDATA[Sucessfully completed validation]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-10-25T15:49:07 CDT" name="Default suite" finished-at="2022-10-25T15:49:10 CDT" duration-ms="2290">
+  <suite started-at="2022-10-28T12:42:16 CDT" name="Suite" finished-at="2022-10-28T12:42:21 CDT" duration-ms="4834">
     <groups>
     </groups>
-    <test started-at="2022-10-25T15:49:07 CDT" name="Default test" finished-at="2022-10-25T15:49:10 CDT" duration-ms="2290">
-      <class name="com.unosquare.FirstAPITest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.unosquare.FirstAPITest@130161f7]" started-at="2022-10-25T15:49:07 CDT" name="beforeMethod" finished-at="2022-10-25T15:49:07 CDT" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validate_200_status()[pri:0, instance:com.unosquare.FirstAPITest@130161f7]" started-at="2022-10-25T15:49:07 CDT" name="validate_200_status" finished-at="2022-10-25T15:49:09 CDT" duration-ms="1261" status="PASS">
+    <test started-at="2022-10-28T12:42:16 CDT" name="Test" finished-at="2022-10-28T12:42:21 CDT" duration-ms="4834">
+      <class name="com.unosquare.requests.UpdateUserTest">
+        <test-method signature="update_user_from_file()[pri:0, instance:com.unosquare.requests.UpdateUserTest@7193666c]" started-at="2022-10-28T12:42:20 CDT" name="update_user_from_file" finished-at="2022-10-28T12:42:20 CDT" duration-ms="432" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Sucess 200 validation]]>
+              <![CDATA[Status Code 200]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"name":"William Gates","job":"Chairman","updatedAt":"2022-10-28T17:42:52.937Z"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- update_user_from_file -->
+      </class> <!-- com.unosquare.requests.UpdateUserTest -->
+      <class name="com.unosquare.requests.FirstAPITest">
+        <test-method signature="validate_200_status()[pri:0, instance:com.unosquare.requests.FirstAPITest@5119fb47]" started-at="2022-10-28T12:42:19 CDT" name="validate_200_status" finished-at="2022-10-28T12:42:19 CDT" duration-ms="124" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Status Code: 200]]>
             </line>
           </reporter-output>
         </test-method> <!-- validate_200_status -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.unosquare.FirstAPITest@130161f7]" started-at="2022-10-25T15:49:09 CDT" name="beforeMethod" finished-at="2022-10-25T15:49:09 CDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="validate_200_status_Gherkin()[pri:0, instance:com.unosquare.FirstAPITest@130161f7]" started-at="2022-10-25T15:49:09 CDT" name="validate_200_status_Gherkin" finished-at="2022-10-25T15:49:09 CDT" duration-ms="677" status="PASS">
+        <test-method signature="validate_first_and_last_names()[pri:0, instance:com.unosquare.requests.FirstAPITest@5119fb47]" started-at="2022-10-28T12:42:19 CDT" name="validate_first_and_last_names" finished-at="2022-10-28T12:42:19 CDT" duration-ms="585" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Sucess 200 validation]]>
+              <![CDATA[Status Code: 200]]>
+            </line>
+            <line>
+              <![CDATA[Response: {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
             </line>
           </reporter-output>
-        </test-method> <!-- validate_200_status_Gherkin -->
-        <test-method signature="validate_first_last_names()[pri:0, instance:com.unosquare.FirstAPITest@130161f7]" started-at="2022-10-25T15:49:09 CDT" name="validate_first_last_names" finished-at="2022-10-25T15:49:10 CDT" duration-ms="317" status="PASS">
+        </test-method> <!-- validate_first_and_last_names -->
+        <test-method signature="validate_first_and_last_names_Gherkin()[pri:0, instance:com.unosquare.requests.FirstAPITest@5119fb47]" started-at="2022-10-28T12:42:19 CDT" name="validate_first_and_last_names_Gherkin" finished-at="2022-10-28T12:42:20 CDT" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_first_and_last_names_Gherkin -->
+      </class> <!-- com.unosquare.requests.FirstAPITest -->
+      <class name="com.unosquare.requests.PostTest">
+        <test-method signature="post_user()[pri:0, instance:com.unosquare.requests.PostTest@6a192cfe]" started-at="2022-10-28T12:42:18 CDT" name="post_user" finished-at="2022-10-28T12:42:18 CDT" duration-ms="388" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
+              <![CDATA[Status Code 201]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"name":"JohnAPI","job":"QA","id":"995","createdAt":"2022-10-28T17:42:50.833Z"}]]>
             </line>
           </reporter-output>
-        </test-method> <!-- validate_first_last_names -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.unosquare.FirstAPITest@130161f7]" started-at="2022-10-25T15:49:09 CDT" name="beforeMethod" finished-at="2022-10-25T15:49:09 CDT" duration-ms="0" status="PASS">
+        </test-method> <!-- post_user -->
+        <test-method signature="post_user_from_file()[pri:0, instance:com.unosquare.requests.PostTest@6a192cfe]" started-at="2022-10-28T12:42:18 CDT" name="post_user_from_file" finished-at="2022-10-28T12:42:18 CDT" duration-ms="387" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Status Code 201]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"name":"Steve Jobs","job":"CEO","id":"286","createdAt":"2022-10-28T17:42:51.217Z"}]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-      </class> <!-- com.unosquare.FirstAPITest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- post_user_from_file -->
+        <test-method signature="post_user_from_file2()[pri:0, instance:com.unosquare.requests.PostTest@6a192cfe]" started-at="2022-10-28T12:42:18 CDT" name="post_user_from_file2" finished-at="2022-10-28T12:42:19 CDT" duration-ms="396" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Status Code 201]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"name":"Bill Gates","job":"Chairman","id":"406","createdAt":"2022-10-28T17:42:51.619Z"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- post_user_from_file2 -->
+      </class> <!-- com.unosquare.requests.PostTest -->
+      <class name="com.unosquare.requests.LoginTest">
+        <test-method signature="post_test_from_file2()[pri:0, instance:com.unosquare.requests.LoginTest@68999068]" started-at="2022-10-28T12:42:16 CDT" name="post_test_from_file2" finished-at="2022-10-28T12:42:18 CDT" duration-ms="1468" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Status Code 200]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"token":"QpwL5tke4Pnpja7X4"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- post_test_from_file2 -->
+      </class> <!-- com.unosquare.requests.LoginTest -->
+      <class name="com.unosquare.requests.FuchsiaRoseTest">
+        <test-method signature="validate_fuchsia_status_code_and_fields()[pri:0, instance:com.unosquare.requests.FuchsiaRoseTest@20deea7f]" started-at="2022-10-28T12:42:20 CDT" name="validate_fuchsia_status_code_and_fields" finished-at="2022-10-28T12:42:21 CDT" duration-ms="421" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Status Code: 200]]>
+            </line>
+            <line>
+              <![CDATA[{"data":{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validate_fuchsia_status_code_and_fields -->
+        <test-method signature="validate_fuchsia_status_code_and_fields_Gherkin()[pri:0, instance:com.unosquare.requests.FuchsiaRoseTest@20deea7f]" started-at="2022-10-28T12:42:21 CDT" name="validate_fuchsia_status_code_and_fields_Gherkin" finished-at="2022-10-28T12:42:21 CDT" duration-ms="420" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Sucessfully completed validation]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validate_fuchsia_status_code_and_fields_Gherkin -->
+      </class> <!-- com.unosquare.requests.FuchsiaRoseTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

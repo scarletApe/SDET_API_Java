@@ -3,7 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.unosquare.FirstAPITest"/>
+      <class name="com.unosquare.requests.LoginTest"/>
+      <class name="com.unosquare.requests.PostTest"/>
+      <class name="com.unosquare.requests.FirstAPITest"/>
+      <class name="com.unosquare.requests.UpdateUserTest"/>
+      <class name="com.unosquare.requests.FuchsiaRoseTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
