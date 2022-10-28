@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.unosquare.FuchsiaRoseTest">
+      <class name="com.unosquare.requests.UpdateUserTest">
         <methods>
-          <include name="validate_200_status_Gherkin"/>
+          <include name="update_user_from_file"/>
         </methods>
-      </class> <!-- com.unosquare.FuchsiaRoseTest -->
+      </class> <!-- com.unosquare.requests.UpdateUserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
