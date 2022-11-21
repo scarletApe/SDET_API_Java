@@ -1,7 +1,8 @@
 package com.unosquare.requests;
 
 import org.hamcrest.Matchers;
-import org.testng.Assert;
+import org.junit.Assert;
+//import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 

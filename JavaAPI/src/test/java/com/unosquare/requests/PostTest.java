@@ -1,7 +1,7 @@
 package com.unosquare.requests;
 
 import org.json.simple.JSONObject;
-import org.testng.Assert;
+import org.junit.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 

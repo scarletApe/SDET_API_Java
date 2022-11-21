@@ -11,19 +11,19 @@
       <![CDATA[Status Code 201]]>
     </line>
     <line>
-      <![CDATA[Response Body: {"name":"JohnAPI","job":"QA","id":"810","createdAt":"2022-11-21T21:35:25.088Z"}]]>
+      <![CDATA[Response Body: {"name":"JohnAPI","job":"QA","id":"583","createdAt":"2022-11-21T21:59:54.147Z"}]]>
     </line>
     <line>
       <![CDATA[Status Code 201]]>
     </line>
     <line>
-      <![CDATA[Response Body: {"name":"Steve Jobs","job":"CEO","id":"948","createdAt":"2022-11-21T21:35:25.532Z"}]]>
+      <![CDATA[Response Body: {"name":"Steve Jobs","job":"CEO","id":"618","createdAt":"2022-11-21T21:59:54.630Z"}]]>
     </line>
     <line>
       <![CDATA[Status Code 201]]>
     </line>
     <line>
-      <![CDATA[Response Body: {"name":"Bill Gates","job":"Chairman","id":"673","createdAt":"2022-11-21T21:35:25.945Z"}]]>
+      <![CDATA[Response Body: {"name":"Bill Gates","job":"Chairman","id":"336","createdAt":"2022-11-21T21:59:55.070Z"}]]>
     </line>
     <line>
       <![CDATA[Status Code: 200]]>
@@ -38,7 +38,7 @@
       <![CDATA[Status Code 200]]>
     </line>
     <line>
-      <![CDATA[Response Body: {"name":"William Gates","job":"Chairman","updatedAt":"2022-11-21T21:35:27.441Z"}]]>
+      <![CDATA[Response Body: {"name":"William Gates","job":"Chairman","updatedAt":"2022-11-21T21:59:56.585Z"}]]>
     </line>
     <line>
       <![CDATA[Status Code: 200]]>
@@ -50,31 +50,19 @@
       <![CDATA[Sucessfully completed validation]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-11-21T15:34:40 CST" name="Suite" finished-at="2022-11-21T15:34:46 CST" duration-ms="5406">
+  <suite started-at="2022-11-21T15:59:09 CST" name="Suite" finished-at="2022-11-21T15:59:15 CST" duration-ms="5563">
     <groups>
     </groups>
-    <test started-at="2022-11-21T15:34:40 CST" name="Test" finished-at="2022-11-21T15:34:46 CST" duration-ms="5406">
-      <class name="com.unosquare.requests.UpdateUserTest">
-        <test-method signature="update_user_from_file()[pri:0, instance:com.unosquare.requests.UpdateUserTest@3aefe5e5]" started-at="2022-11-21T15:34:44 CST" name="update_user_from_file" finished-at="2022-11-21T15:34:45 CST" duration-ms="472" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Status Code 200]]>
-            </line>
-            <line>
-              <![CDATA[Response Body: {"name":"William Gates","job":"Chairman","updatedAt":"2022-11-21T21:35:27.441Z"}]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- update_user_from_file -->
-      </class> <!-- com.unosquare.requests.UpdateUserTest -->
+    <test started-at="2022-11-21T15:59:09 CST" name="Test" finished-at="2022-11-21T15:59:15 CST" duration-ms="5563">
       <class name="com.unosquare.requests.FirstAPITest">
-        <test-method signature="validate_200_status()[pri:0, instance:com.unosquare.requests.FirstAPITest@1184ab05]" started-at="2022-11-21T15:34:43 CST" name="validate_200_status" finished-at="2022-11-21T15:34:44 CST" duration-ms="186" status="PASS">
+        <test-method signature="validate_200_status()[pri:0, instance:com.unosquare.requests.FirstAPITest@1184ab05]" started-at="2022-11-21T15:59:12 CST" name="validate_200_status" finished-at="2022-11-21T15:59:13 CST" duration-ms="180" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Status Code: 200]]>
             </line>
           </reporter-output>
         </test-method> <!-- validate_200_status -->
-        <test-method signature="validate_first_and_last_names()[pri:0, instance:com.unosquare.requests.FirstAPITest@1184ab05]" started-at="2022-11-21T15:34:44 CST" name="validate_first_and_last_names" finished-at="2022-11-21T15:34:44 CST" duration-ms="647" status="PASS">
+        <test-method signature="validate_first_and_last_names()[pri:0, instance:com.unosquare.requests.FirstAPITest@1184ab05]" started-at="2022-11-21T15:59:13 CST" name="validate_first_and_last_names" finished-at="2022-11-21T15:59:13 CST" duration-ms="587" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Status Code: 200]]>
@@ -84,45 +72,57 @@
             </line>
           </reporter-output>
         </test-method> <!-- validate_first_and_last_names -->
-        <test-method signature="validate_first_and_last_names_Gherkin()[pri:0, instance:com.unosquare.requests.FirstAPITest@1184ab05]" started-at="2022-11-21T15:34:44 CST" name="validate_first_and_last_names_Gherkin" finished-at="2022-11-21T15:34:44 CST" duration-ms="193" status="PASS">
+        <test-method signature="validate_first_and_last_names_Gherkin()[pri:0, instance:com.unosquare.requests.FirstAPITest@1184ab05]" started-at="2022-11-21T15:59:13 CST" name="validate_first_and_last_names_Gherkin" finished-at="2022-11-21T15:59:13 CST" duration-ms="225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_first_and_last_names_Gherkin -->
       </class> <!-- com.unosquare.requests.FirstAPITest -->
+      <class name="com.unosquare.requests.UpdateUserTest">
+        <test-method signature="update_user_from_file()[pri:0, instance:com.unosquare.requests.UpdateUserTest@3aefe5e5]" started-at="2022-11-21T15:59:13 CST" name="update_user_from_file" finished-at="2022-11-21T15:59:14 CST" duration-ms="526" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Status Code 200]]>
+            </line>
+            <line>
+              <![CDATA[Response Body: {"name":"William Gates","job":"Chairman","updatedAt":"2022-11-21T21:59:56.585Z"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- update_user_from_file -->
+      </class> <!-- com.unosquare.requests.UpdateUserTest -->
       <class name="com.unosquare.requests.PostTest">
-        <test-method signature="post_user()[pri:0, instance:com.unosquare.requests.PostTest@47d90b9e]" started-at="2022-11-21T15:34:42 CST" name="post_user" finished-at="2022-11-21T15:34:43 CST" duration-ms="471" status="PASS">
+        <test-method signature="post_user()[pri:0, instance:com.unosquare.requests.PostTest@47d90b9e]" started-at="2022-11-21T15:59:11 CST" name="post_user" finished-at="2022-11-21T15:59:11 CST" duration-ms="470" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Status Code 201]]>
             </line>
             <line>
-              <![CDATA[Response Body: {"name":"JohnAPI","job":"QA","id":"810","createdAt":"2022-11-21T21:35:25.088Z"}]]>
+              <![CDATA[Response Body: {"name":"JohnAPI","job":"QA","id":"583","createdAt":"2022-11-21T21:59:54.147Z"}]]>
             </line>
           </reporter-output>
         </test-method> <!-- post_user -->
-        <test-method signature="post_user_from_file()[pri:0, instance:com.unosquare.requests.PostTest@47d90b9e]" started-at="2022-11-21T15:34:43 CST" name="post_user_from_file" finished-at="2022-11-21T15:34:43 CST" duration-ms="428" status="PASS">
+        <test-method signature="post_user_from_file()[pri:0, instance:com.unosquare.requests.PostTest@47d90b9e]" started-at="2022-11-21T15:59:11 CST" name="post_user_from_file" finished-at="2022-11-21T15:59:12 CST" duration-ms="476" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Status Code 201]]>
             </line>
             <line>
-              <![CDATA[Response Body: {"name":"Steve Jobs","job":"CEO","id":"948","createdAt":"2022-11-21T21:35:25.532Z"}]]>
+              <![CDATA[Response Body: {"name":"Steve Jobs","job":"CEO","id":"618","createdAt":"2022-11-21T21:59:54.630Z"}]]>
             </line>
           </reporter-output>
         </test-method> <!-- post_user_from_file -->
-        <test-method signature="post_user_from_file2()[pri:0, instance:com.unosquare.requests.PostTest@47d90b9e]" started-at="2022-11-21T15:34:43 CST" name="post_user_from_file2" finished-at="2022-11-21T15:34:43 CST" duration-ms="411" status="PASS">
+        <test-method signature="post_user_from_file2()[pri:0, instance:com.unosquare.requests.PostTest@47d90b9e]" started-at="2022-11-21T15:59:12 CST" name="post_user_from_file2" finished-at="2022-11-21T15:59:12 CST" duration-ms="437" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Status Code 201]]>
             </line>
             <line>
-              <![CDATA[Response Body: {"name":"Bill Gates","job":"Chairman","id":"673","createdAt":"2022-11-21T21:35:25.945Z"}]]>
+              <![CDATA[Response Body: {"name":"Bill Gates","job":"Chairman","id":"336","createdAt":"2022-11-21T21:59:55.070Z"}]]>
             </line>
           </reporter-output>
         </test-method> <!-- post_user_from_file2 -->
       </class> <!-- com.unosquare.requests.PostTest -->
       <class name="com.unosquare.requests.LoginTest">
-        <test-method signature="post_test_from_file2()[pri:0, instance:com.unosquare.requests.LoginTest@1534f01b]" started-at="2022-11-21T15:34:41 CST" name="post_test_from_file2" finished-at="2022-11-21T15:34:42 CST" duration-ms="1550" status="PASS">
+        <test-method signature="post_test_from_file2()[pri:0, instance:com.unosquare.requests.LoginTest@1534f01b]" started-at="2022-11-21T15:59:09 CST" name="post_test_from_file2" finished-at="2022-11-21T15:59:11 CST" duration-ms="1636" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Status Code 200]]>
@@ -134,7 +134,7 @@
         </test-method> <!-- post_test_from_file2 -->
       </class> <!-- com.unosquare.requests.LoginTest -->
       <class name="com.unosquare.requests.FuchsiaRoseTest">
-        <test-method signature="validate_fuchsia_status_code_and_fields()[pri:0, instance:com.unosquare.requests.FuchsiaRoseTest@149e0f5d]" started-at="2022-11-21T15:34:45 CST" name="validate_fuchsia_status_code_and_fields" finished-at="2022-11-21T15:34:45 CST" duration-ms="450" status="PASS">
+        <test-method signature="validate_fuchsia_status_code_and_fields()[pri:0, instance:com.unosquare.requests.FuchsiaRoseTest@149e0f5d]" started-at="2022-11-21T15:59:14 CST" name="validate_fuchsia_status_code_and_fields" finished-at="2022-11-21T15:59:14 CST" duration-ms="492" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Status Code: 200]]>
@@ -144,7 +144,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- validate_fuchsia_status_code_and_fields -->
-        <test-method signature="validate_fuchsia_status_code_and_fields_Gherkin()[pri:0, instance:com.unosquare.requests.FuchsiaRoseTest@149e0f5d]" started-at="2022-11-21T15:34:45 CST" name="validate_fuchsia_status_code_and_fields_Gherkin" finished-at="2022-11-21T15:34:46 CST" duration-ms="564" status="PASS">
+        <test-method signature="validate_fuchsia_status_code_and_fields_Gherkin()[pri:0, instance:com.unosquare.requests.FuchsiaRoseTest@149e0f5d]" started-at="2022-11-21T15:59:14 CST" name="validate_fuchsia_status_code_and_fields_Gherkin" finished-at="2022-11-21T15:59:15 CST" duration-ms="497" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Sucessfully completed validation]]>
